@@ -380,10 +380,16 @@
 
             <!-- MODAL -->
             <div class="header__popup" id="modal">
-                <form>
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="text" placeholder="Ваш телефон">
-                    <input type="submit" value="Отправить">
+                <form class="modal__form">
+                    <!-- Hidden Required Fields -->
+		            <input type="hidden" name="project_name" value="Business project">
+		            <input type="hidden" name="admin_email" value="sashafootball2018@gmail.com">
+		            <input type="hidden" name="form_subject" value="Modal Form">
+		            <!-- END Hidden Required Fields -->
+
+                    <input name="Name" type="text" placeholder="Ваше имя">
+                    <input name="E-mail" type="text" placeholder="Ваш телефон">
+                    <input name="Phone" type="submit" value="Отправить">
                 </form>
             </div>
               <!-- MODAL -->
